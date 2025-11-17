@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sanvia.co/sitemap.xml
+
+# Block access to sensitive directories
+Disallow: /.github/
+Disallow: /assets/temp/
+Disallow: /node_modules/
+
+# Crawl-delay for politeness
+Crawl-delay: 1

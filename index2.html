@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SANVIA — Advancing Safety Through Science</title>
+  <meta name="description" content="SANVIA is an IP holding company with a global portfolio in antimicrobial science, supercritical material impregnation, and next-generation infection control." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --charcoal:#0b0e11; --slate:#1f2937; --teal:#14b8a6; --silver:#e5e7eb; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--charcoal); color: #eaeef2; }
+    .glass { background: rgba(15,17,25,0.55); backdrop-filter: blur(8px); }
+    .card { border-radius: 1rem; border: 1px solid rgba(255,255,255,0.08); }
+    .gradient { background: radial-gradient(1000px 400px at 50% -10%, rgba(20,184,166,0.25), transparent 60%), linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0)); }
+  </style>
+</head>
+<body class="antialiased">
+  <!-- NAV -->
+  <header class="fixed top-0 inset-x-0 z-50">
+    <nav class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between glass card">
+      <div class="flex items-center gap-3">
+        <div class="h-8 w-8 rounded-xl bg-teal-400/20 border border-teal-300/30 flex items-center justify-center">
+          <span class="text-teal-300 font-extrabold tracking-tight">S</span>
+        </div>
+        <span class="text-silver text-lg font-semibold tracking-wide">SANVIA</span>
+      </div>
+      <div class="hidden md:flex gap-8 text-sm text-silver/80">
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#estate" class="hover:text-white">Patent Estate</a>
+        <a href="#innovation" class="hover:text-white">Innovation</a>
+        <a href="#sectors" class="hover:text-white">Sectors</a>
+        <a href="#partners" class="hover:text-white">Licensing</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative pt-28 min-h-[92vh] flex items-center gradient">
+    <video class="absolute inset-0 w-full h-full object-cover opacity-25" autoplay muted loop playsinline>
+      <source src="assets/sanvia-bg.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/80"></div>
+
+    <div class="relative mx-auto max-w-5xl px-6">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Advancing Safety<br class="hidden md:block"/> Through Science
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-silver/80 max-w-3xl">
+        SANVIA is an intellectual property holding company with a global portfolio in antimicrobial science,
+        supercritical material impregnation, and next-generation infection control.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#estate" class="px-5 py-3 bg-teal-500 hover:bg-teal-400 text-black font-semibold rounded-xl">Explore Patent Estate</a>
+        <a href="#contact" class="px-5 py-3 bg-white/10 hover:bg-white/20 rounded-xl font-semibold">Partner with SANVIA</a>
+      </div>
+      <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="card p-4 glass">
+          <p class="text-xs text-silver/60">Patent Families</p>
+          <p class="text-2xl font-bold">0001 – 0005</p>
+        </div>
+        <div class="card p-4 glass">
+          <p class="text-xs text-silver/60">Global Scope</p>
+          <p class="text-2xl font-bold">US + PCT</p>
+        </div>
+        <div class="card p-4 glass">
+          <p class="text-xs text-silver/60">Portfolio Life</p>
+          <p class="text-2xl font-bold">2039 – 2045</p>
+        </div>
+        <div class="card p-4 glass">
+          <p class="text-xs text-silver/60">Focus</p>
+          <p class="text-2xl font-bold">EQ12™ & SCF</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24">
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold">About SANVIA</h2>
+        <p class="mt-6 text-silver/85">
+          SANVIA consolidates a diversified IP estate spanning healthcare, biotechnology, food safety, and
+          environmental protection. Our cornerstone is EQ12™—a next-generation quaternary ammonium platform—
+          and proprietary supercritical CO₂ infusion methods that transform materials into self-protecting systems.
+        </p>
+        <p class="mt-4 text-silver/80">
+          We license, develop, and protect intellectual property. Subsidiaries and strategic partners leverage
+          SANVIA’s assets to accelerate product pipelines without compromising safety or performance.
+        </p>
+      </div>
+      <div class="card glass p-6">
+        <h3 class="text-xl font-semibold">Highlights</h3>
+        <ul class="mt-4 space-y-3 text-silver/85 list-disc list-inside">
+          <li>Issued U.S. and pending PCT claims across multiple sectors</li>
+          <li>Portfolio coverage to 2045</li>
+          <li>Medical-grade safety profile at working concentrations</li>
+          <li>Scalable integration in polymers, textiles, and filtration media</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATENT ESTATE -->
+  <section id="estate" class="py-24 bg-slate-900/40">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Patent Estate</h2>
+      <p class="mt-4 text-silver/80 max-w-3xl">
+        Five interlocking families protect synthesis, materials processing, medical and environmental applications,
+        and cross-sector deployment. The summary below provides a non-confidential overview.
+      </p>
+
+      <div class="mt-10 grid md:grid-cols-2 gap-6">
+        <div class="card glass p-6">
+          <h3 class="font-semibold text-teal-300">0001 — Supercritical Infusion & Composites</h3>
+          <p class="mt-2 text-silver/85">Issued U.S. Patent for SCF-CO₂ infusion of antimicrobials into polymers, decellularized tissues, and composites.</p>
+          <p class="mt-2 text-sm text-silver/60">Use cases: medical implants, advanced materials.</p>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold text-teal-300">0002 — EQ12™ Synthesis & Composition</h3>
+          <p class="mt-2 text-silver/85">Novel manufacturing route to C12-dominant quaternary ammonium compound (EQ12™) with high purity.</p>
+          <p class="mt-2 text-sm text-silver/60">Use cases: pharma-grade actives, surface hygiene, materials integration.</p>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold text-teal-300">0003 — Medical & Wound Applications</h3>
+          <p class="mt-2 text-silver/85">Topical and irrigant applications for wound care and surgical fields; favorable safety profile at use levels.</p>
+          <p class="mt-2 text-sm text-silver/60">Use cases: surgical irrigants, wound cleansers, device care.</p>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold text-teal-300">0004 — Materials & Textiles (SCF Integration)</h3>
+          <p class="mt-2 text-silver/85">Self-disinfecting respirators, filters, and textiles via supercritical impregnation without impairing performance.</p>
+          <p class="mt-2 text-sm text-silver/60">Use cases: PPE, HVAC, cleanrooms, transportation.</p>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold text-teal-300">0005 — Cross-Sector Biological Applications</h3>
+          <p class="mt-2 text-silver/85">Food safety (live & processed), agriculture, and feed protection at ultra-low concentrations.</p>
+          <p class="mt-2 text-sm text-silver/60">Use cases: shellfish, sprouts, produce, meat, animal feed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INNOVATION -->
+  <section id="innovation" class="py-24">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Innovation in Focus</h2>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card glass p-6">
+          <h3 class="font-semibold">EQ12™</h3>
+          <p class="mt-2 text-silver/85">A next-generation quaternary platform with exceptional potency and safety at working concentrations.</p>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold">Supercritical Infusion</h3>
+          <p class="mt-2 text-silver/85">Deep, uniform material integration without heat or harsh solvents; preserves performance.</p>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold">Self‑Disinfecting Materials</h3>
+          <p class="mt-2 text-silver/85">Filters and textiles that kill what they capture—safety that extends beyond capture.</p>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold">Food Safety</h3>
+          <p class="mt-2 text-silver/85">Pathogen control across live and processed products without sensory compromise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORS -->
+  <section id="sectors" class="py-24 bg-slate-900/40">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Portfolio Reach</h2>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card glass p-6">
+          <h3 class="font-semibold text-teal-300">Medical</h3>
+          <p class="mt-2 text-silver/85">Surgical irrigants, wound care, and device protection.</p>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold text-teal-300">Respiratory Protection</h3>
+          <p class="mt-2 text-silver/85">Self-disinfecting respirators and filtration media.</p>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold text-teal-300">Food Safety</h3>
+          <p class="mt-2 text-silver/85">Live & processed products: shellfish, sprouts, produce, meats.</p>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold text-teal-300">Industrial Hygiene</h3>
+          <p class="mt-2 text-silver/85">HVAC, cleanrooms, conveyor and facility safety.</p>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold text-teal-300">Agriculture & Feed</h3>
+          <p class="mt-2 text-silver/85">Animal feed protection without nutritional impact.</p>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold text-teal-300">Consumer</h3>
+          <p class="mt-2 text-silver/85">Surface hygiene and materials that stay cleaner, longer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section id="partners" class="py-24">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Licensing & Partnerships</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-8 items-start">
+        <div class="card glass p-6">
+          <h3 class="font-semibold">Engage</h3>
+          <p class="mt-2 text-silver/85">SANVIA partners with leading enterprises to bring protected technologies to global markets.</p>
+          <ul class="mt-4 list-disc list-inside text-silver/85 space-y-1">
+            <li>Evaluation agreements under NDA</li>
+            <li>Field-of-use and geography-specific licensing</li>
+            <li>Joint development for targeted applications</li>
+          </ul>
+        </div>
+        <div class="card glass p-6">
+          <h3 class="font-semibold">Get Started</h3>
+          <p class="mt-2 text-silver/85">Tell us about your use case and market. We tailor access and collaboration models to accelerate your roadmap.</p>
+          <a href="#contact" class="inline-block mt-4 px-5 py-3 bg-teal-500 hover:bg-teal-400 text-black font-semibold rounded-xl">Inquire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 bg-slate-900/40">
+    <div class="mx-auto max-w-4xl px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Contact</h2>
+      <p class="mt-4 text-silver/80">For licensing and partnership inquiries:</p>
+      <p class="mt-2 text-silver/90 font-semibold">inquiries@sanvia.co</p>
+      <p class="mt-8 text-silver/60 text-sm">© SANVIA LLC. Patent families spanning U.S. and international jurisdictions — expiration 2039–2045.</p>
+    </div>
+  </section>
+</body>
+</html>

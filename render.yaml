@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: sanvia-website
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
+    domains:
+      - sanvia.co
+      - www.sanvia.co
+    headers:
+      - path: "/*"
+        name: X-Frame-Options
+        value: DENY
+      - path: "/*"
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: "/*"
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: "/*.css"
+        name: Cache-Control
+        value: public, max-age=31536000
+      - path: "/*.js"
+        name: Cache-Control
+        value: public, max-age=31536000
+      - path: "/*.svg"
+        name: Cache-Control
+        value: public, max-age=31536000
+      - path: "/*.png"
+        name: Cache-Control
+        value: public, max-age=31536000
+      - path: "/*.jpg"
+        name: Cache-Control
+        value: public, max-age=31536000
+    routes:
+      - type: rewrite
+        source: "/*"
+        destination: /index.html
