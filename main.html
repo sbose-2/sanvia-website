@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SANVIA - Intellectual Property in Science</title>
-  <meta name="description" content="SANVIA is an intellectual property holding company founded by Dr. Chad Roy and Dr. Joe Buell, with a portfolio covering antimicrobial technologies and supercritical material processes.">
+  <meta name="description" content="SANVIA is an intellectual property holding company founded by Dr. Chad Roy and Dr. Joe Buell, with a portfolio encompassing antimicrobial technologies and supercritical material processes.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet">
   
   <script>
     // Access protection - redirect if not authenticated
@@ -42,10 +42,12 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
       line-height: 1.6;
       color: var(--text-primary);
       background-color: var(--primary-navy);
+      font-weight: 400;
+      letter-spacing: -0.01em;
     }
 
     /* Professional Header */
@@ -71,12 +73,13 @@
     }
 
     .logo {
-      font-family: 'Playfair Display', serif;
+      font-family: 'JetBrains Mono', monospace;
       font-size: 1.8rem;
-      font-weight: 700;
+      font-weight: 600;
       color: var(--white);
       text-decoration: none;
       letter-spacing: -0.02em;
+      text-transform: uppercase;
     }
 
     .nav-links {
@@ -147,6 +150,26 @@
       content: '';
       position: absolute;
       top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+      background-size: 60px 60px;
+      opacity: 0.3;
+      animation: techGrid 20s linear infinite;
+    }
+
+    @keyframes techGrid {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(60px, 60px); }
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
       right: -50%;
       width: 100%;
       height: 100%;
@@ -197,19 +220,22 @@
     }
 
     .hero-text h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3.5rem;
-      font-weight: 700;
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 3.8rem;
+      font-weight: 600;
       line-height: 1.1;
       margin-bottom: 1.5rem;
       color: var(--white);
+      letter-spacing: -0.03em;
     }
 
     .hero-text p {
       font-size: 1.2rem;
-      line-height: 1.6;
+      line-height: 1.7;
       margin-bottom: 2rem;
       opacity: 0.9;
+      font-weight: 400;
+      letter-spacing: -0.01em;
     }
 
     .hero-cta {
@@ -221,11 +247,31 @@
     .btn {
       padding: 1rem 2rem;
       border-radius: 8px;
+      font-family: 'Space Grotesk', sans-serif;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.3s ease;
-      font-size: 1rem;
+      font-size: 0.9rem;
       display: inline-block;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .btn:hover::before {
+      left: 100%;
     }
 
     .btn-primary {
@@ -266,18 +312,22 @@
     }
 
     .stat-number {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--white);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--light-blue);
       display: block;
+      letter-spacing: -0.02em;
     }
 
     .stat-label {
+      font-family: 'Space Grotesk', sans-serif;
       font-size: 0.85rem;
       opacity: 0.8;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       margin-top: 0.5rem;
+      font-weight: 500;
     }
 
     /* Professional Sections */
@@ -307,11 +357,13 @@
     }
 
     .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-      font-weight: 700;
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 2.8rem;
+      font-weight: 600;
       color: var(--white);
       margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
     }
 
     .section-subtitle {
@@ -359,10 +411,12 @@
     }
 
     .card h3 {
-      font-size: 1.3rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.4rem;
       font-weight: 600;
       color: var(--white);
       margin-bottom: 1rem;
+      letter-spacing: -0.01em;
     }
 
     .card p {
@@ -556,7 +610,7 @@
           <h1>Advancing Science Through Intellectual Property</h1>
           <p>
             SANVIA is a leading intellectual property holding company founded by Dr. Chad Roy and Dr. Joe Buell, 
-            specializing in antimicrobial technologies and advanced material processing innovations.
+            encompassing antimicrobial technologies and advanced material processing innovations.
           </p>
           <div class="hero-cta">
             <a href="#portfolio" class="btn btn-primary">Explore Portfolio</a>
@@ -599,7 +653,7 @@
             in antimicrobial science and advanced material processing technologies.
           </p>
           <p style="line-height: 1.6; margin-bottom: 2rem; color: var(--medium-gray);">
-            As a specialized IP holding company, SANVIA licenses cutting-edge technologies to qualified partners 
+            As an encompassing IP holding company, SANVIA licenses cutting-edge technologies to qualified partners 
             and subsidiaries for development and commercialization across multiple industries.
           </p>
           <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&auto=format&fit=crop&q=80" alt="Advanced Materials Research" class="content-image">
@@ -648,7 +702,7 @@
         <div class="card">
           <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=120&auto=format&fit=crop&q=80" alt="Manufacturing Technology" class="card-icon">
           <h3>Family 0004–0005</h3>
-          <p><strong class="highlight">Manufacturing Technologies:</strong> Specialized implementations for filtration media, textiles, and advanced surface treatment systems.</p>
+          <p><strong class="highlight">Manufacturing Technologies:</strong> Encompassing implementations for filtration media, textiles, and advanced surface treatment systems.</p>
         </div>
       </div>
     </div>
@@ -676,7 +730,7 @@
         <div class="card">
           <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=120&auto=format&fit=crop&q=80" alt="Material Integration" class="card-icon">
           <h3>Material Integration</h3>
-          <p>Comprehensive patent coverage for integration into filters, textiles, and specialized substrate materials.</p>
+          <p>Comprehensive patent coverage for integration into filters, textiles, and encompassing substrate materials.</p>
         </div>
         <div class="card">
           <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=120&auto=format&fit=crop&q=80" alt="Material Processing Methods" class="card-icon">
@@ -745,7 +799,7 @@
           <ul style="color: var(--medium-gray); line-height: 1.8; margin-left: 1.5rem;">
             <li>Confidential technology evaluation programs</li>
             <li>Field-of-use and geographic licensing structures</li>
-            <li>Joint development initiatives for specialized applications</li>
+            <li>Joint development initiatives for encompassing applications</li>
             <li>Technical support and consultation services</li>
           </ul>
         </div>
